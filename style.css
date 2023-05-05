@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+/*----------------Início do código---------------------*/
+
+*{
+   margin:  0;
+   padding: 0;
+   border: 0;
+}
+
+  body {
+   background-color: #535956;
+   color: black;
+   }
+
+   header {
+   padding: 32px;
+   border-bottom: 2px solid #36DBD4; 
+   background-color: rgb(220, 217, 217);
+   }
+
+
+/*------------------Cabeçalho termina aqui(Parte de cima)--------------------------------*/
+
+
+   .links  {
+   text-align: center; 
+   }
+
+   .links a {
+   color: #252525; 
+   font-size: 30px; 
+   line-height: 30px; 
+   margin:  20px; 
+   text-decoration: none; 
+   font-family: 'Lato', sans-serif; 
+   }
+
+.links a:hover { 
+   color: rgb(7, 195, 7);
+   transition: 600ms; 
+}
+
+
+/*----------------Definicão do class='links' termina aqui(Tanto a parte de cima como a de baixo)------------------*/
+
+
+#lion a {
+   padding-top: 4px;
+   padding-bottom: 4px;
+   font-size: 20px;
+}
+
+#lion {
+   padding-top: 8px;
+}
+
+#lion a:hover {
+   border: 1px solid green;
+   transition: 500ms;
+   color:rgb(7, 195, 7);
+}
+
+
+/*----------------Definicão do id='lion' termina aqui (Parte de baixo)------------------*/
+
+
+/*-----------------Parte dos subtítulos(meio), abaixo:------------------------------------*/
+#box {
+   text-align: center; 
+   padding: 32px;  
+   font-family: 'Roboto', sans-serif; 
+}
+
+#box img {
+   border-radius: 50%; 
+   margin-bottom: 32px;
+
+}
+
+#box img:hover {
+   transition: 50ms;
+   border: 3px solid rgb(196, 62, 62); 
+}
+
+#box h1 {
+   font-size: 42px; 
+   line-height: 52px; 
+   font-weight: bold; 
+}
+
+#box h2 {
+   font-size: 24px; 
+   line-height: 34px; 
+   font-weight: normal;   
+   margin-top: 8px; 
+   opacity: 0.8; 
+}  
+
+#box p {
+   max-width: 500px;  
+   margin: 8px auto; 
+   font-size: 24px;  
+   line-height: 34px; 
+}
+
+
+/*--------------A partir daqui, código para o link Vídeos-------------*/
+:root {
+   --subcor: green;
+}
+.cards {
+   max-width: 800px;
+   margin: 0 auto;
+   margin-top: 80px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 20px;
+}
+.card_image a:hover {
+   border: 3px solid white;
+   transition: 100ms;
+}
+.card {
+   background-color: var(--subcor);
+}
+.card_image img {
+   width: 100%
+}
+.card_title, .card_info {
+   padding: 24px;
+   font-family: 'Roboto', sans-serif;
+}
+.card_info {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.card_price {
+   background-color: var(--subcor);
+   filter: brightness(90%);
+   padding: 5px 24px;
+}
