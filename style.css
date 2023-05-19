@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Schibsted+Grotesk&display=swap');
+
 
 
 
@@ -11,36 +13,34 @@
    border: 0;
 }
 
-  body {
-   background-color: #535956;
+body {
+   background-color: #2f2f32;
    color: black;
-   }
+}
 
-   header {
+header {
    padding: 32px;
-   border-bottom: 2px solid #36DBD4; 
-   background-color: rgb(220, 217, 217);
-   }
-
+   border-bottom: 4px solid white; 
+   background-color: #9cae29;
+}
 
 /*------------------Cabeçalho termina aqui(Parte de cima)--------------------------------*/
 
-
-   .links  {
+.links  {
    text-align: center; 
-   }
+}
 
-   .links a {
-   color: #252525; 
-   font-size: 30px; 
+.links a {
+   color: #2f2f32; 
+   font-size: 25px; 
    line-height: 30px; 
    margin:  20px; 
    text-decoration: none; 
-   font-family: 'Lato', sans-serif; 
-   }
+   font-family: 'Schibsted Grotesk', sans-serif;
+}
 
 .links a:hover { 
-   color: rgb(7, 195, 7);
+   color: white;
    transition: 600ms; 
 }
 
@@ -52,6 +52,7 @@
    padding-top: 4px;
    padding-bottom: 4px;
    font-size: 20px;
+   color: white;
 }
 
 #lion {
@@ -59,11 +60,10 @@
 }
 
 #lion a:hover {
-   border: 1px solid green;
-   transition: 500ms;
-   color:rgb(7, 195, 7);
+   border: 3px solid green;
+   transition:500ms;
+   color:white;
 }
-
 
 /*----------------Definicão do id='lion' termina aqui (Parte de baixo)------------------*/
 
@@ -72,18 +72,13 @@
 #box {
    text-align: center; 
    padding: 32px;  
-   font-family: 'Roboto', sans-serif; 
+   font-family: 'Roboto', sans-serif;
+   color: white;
 }
 
 #box img {
    border-radius: 50%; 
    margin-bottom: 32px;
-
-}
-
-#box img:hover {
-   transition: 50ms;
-   border: 3px solid rgb(196, 62, 62); 
 }
 
 #box h1 {
@@ -121,13 +116,13 @@
    gap: 20px;
 }
 .card {
-   background-color: var(--subcor);
+   background-color: #9cae29;
 }
 .card_image img {
    width: 100%
 }
 .card_title, .card_info {
-   padding: 24px;
+   padding: 8px;
    font-family: 'Roboto', sans-serif;
 }
 .card_info {
@@ -135,7 +130,7 @@
    grid-template-columns: 1fr 1fr;
 }
 .card_price {
-   background-color: var(--subcor);
+   background-color: var(--subcolor);
    filter: brightness(90%);
    padding: 5px 24px;
 }
